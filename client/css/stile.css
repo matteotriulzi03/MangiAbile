@@ -18,6 +18,11 @@ padding: 20px;
 background-color: #cc5803;
 color: #ffffff;
 }
+.antifooter {
+padding: 20px;
+background-color: #fff;
+color: #cc5803;
+}
 .intro {
 padding: 20px;
 background-color: #cc5803;
@@ -142,4 +147,14 @@ color: #ffb627;
 
 .maintxt{
 color: #ff9505;
+}
+
+
+.paragrafo-espandibile {
+  overflow: hidden;
+  max-height: 0px; /* altezza massima iniziale */
+  transition: max-height 0s ease;
+}
+.paragrafo-espandibile.expanded {
+  max-height: 100%; /* altezza massima espansa */
 }
