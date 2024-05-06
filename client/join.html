@@ -60,100 +60,105 @@
     </div>
 </div>
 <!--titolo-end-->
-<div class="">
-    <div class="col-lg-8 offset-2 container rounded form text-center">
-    <form
-            class="form-contact contact_form"
-            method="post"
-            id="eventForm"
-            novalidate
-    >
-        <div class="row osw">
-            <div class="col-6">
-                <div class="form-group">
-                    <label>First name</label>
-                    <input
-                            class="form-control"
-                            name="first_name"
-                            id="first_name"
-                            type="text"
-                            placeholder="Mario"
-                            required
-                    />
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="form-group">
-                    <label>Last name</label>
-                    <input
-                            class="form-control"
-                            name="last_name"
-                            id="last_name"
-                            type="text"
-                            placeholder="Rossi"
-                            required
-                    />
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <label>Email</label>
-                    <input
-                            class="form-control"
-                            name="email"
-                            id="email"
-                            type="email"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Email'"
-                            placeholder="mariorossi@gmail.com"
-                            required
-                    />
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <label>Birth date</label>
-                    <input
-                            class="form-control"
-                            name="birth_date"
-                            id="birth_date"
-                            type="date"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Birth date'"
-                            placeholder="Birth date"
-                            required
-                    />
-                </div>
-            </div>
-            <div class="col-12">
-                <label for="cvFile">Curriculum Vitae</label>
-                <input class="form-control" type="file" id="cvFile" required>
-            </div>
-        </div>
-        <div id="errorContainer" class="mb-3 text-danger"></div>
-        <div id="submit-btn" class="form-group">
-            <button type="submit" class="button button1">
-                INVIA
-            </button>
-        </div>
-        <span id="spinner" class="loader" style="display: none;"></span>
-    </form>
-    <div id="successContainer"></div>
-</div>
-</div>
 
+<!-- Start page content -->
+<div class="container osw">
+    <div class="col-lg-8 offset-2 container rounded form text-center">
+        <form
+                method="post"
+                id="eventForm"
+                novalidate
+        >
+            <div class="row osw">
+                <div class="col-6">
+                    <div class="form-group">
+                        <h5>Nome</h5>
+                        <input
+                                class="form-control"
+                                name="first_name"
+                                id="first_name"
+                                type="text"
+                                placeholder="Mario"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <h5>Cognome</h5>
+                        <input
+                                class="form-control"
+                                name="last_name"
+                                id="last_name"
+                                type="text"
+                                placeholder="Rossi"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <h5>E-mail</h5>
+                        <input
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                type="email"
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Email'"
+                                placeholder="mariorossi@gmail.com"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <h5>Data di nascita</h5>
+                        <input
+                                class="form-control"
+                                name="birth_date"
+                                id="birth_date"
+                                type="date"
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Birth date'"
+                                placeholder="Birth date"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h5 for="cvFile">Curriculum Vitae</h5>
+                    <input class="form-control" type="file" id="cvFile" required>
+                </div>
+            </div>
+            <div id="errorContainer" class="mb-3 text-danger"></div>
+            <div id="submit-btn" class="form-group">
+                <button type="submit" class="button button1 mont">
+                    INVIA
+                </button>
+            </div>
+            <span id="spinner" class="loader" style="display: none;"></span>
+        </form>
+        <div id="successContainer"></div>
+    </div>
+</div>
+<!-- End page content -->
 
 <!--cortina-->
-<div class="container">
+<div class="container pad">
     <div class="col text-center">
         <img width="40%" src="img/brand/mangiabile.png" alt="">
+        <a href="https://www.instagram.com/jemib_bicocca/">
+            <p class="osw social">seguici anche su Instagram <i class="fa fa-instagram"></i></p>
+        </a>
+
     </div>
 </div>
 <!--cortina-end-->
 
 <!-- footer_start -->
 <footer class="footer">
-    <div class="container">
+    <div class="container pad">
         <div class="footer_widget">
             <p><strong>POWERED BY</strong></p>
         </div>
@@ -183,7 +188,7 @@
                     </p>
                     <p>
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        info@jemib.it
+                        info@jexcellence.it
                     </p>
                 </div>
             </div>
@@ -202,7 +207,7 @@
         </div>
     </div>
 </footer>
-
+<!-- footer_end -->
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>

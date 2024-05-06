@@ -1,20 +1,20 @@
 <!doctype html>
-<html lang="it">
+<html class="no-js" lang="it">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>MangiAbile</title>
-    <meta name="description" content="...">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css"><!---->
-    <link rel="stylesheet" href="css/font-awesome.min.css"><!---->
-    <link rel="stylesheet" href="css/themify-icons.css"><!---->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/stile.css"><!---->
     <link rel="stylesheet" href="css/menu-tenda.css"><!---->
-    <link rel="stylesheet" href="css/slicknav.css"><!---->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"><!---->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"><!---->
 </head>
@@ -35,11 +35,10 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a class="active" href="home.html">Home</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <li><a href="menu.html">Menu</a></li>
                                     <li><a href="who.html">Chi Siamo</a></li>
-                                    <li><a href="help.html">Aiutaci!</a></li>
-                                    <li><a href="join.html">Gli eventi</a></li>
+                                    <li><a class="active" href="join.html">Unisciti a noi!</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -56,17 +55,16 @@
 
 <!--titolo-->
 <div class="container titolo">
-    <div class="col text-center osw">
+    <div class="col text-center">
         <img width="50%" src="img/brand/logo_completo.png" alt="">
-        <h1 class="slogan"><strong>Dove la specialità siamo noi</strong></h1>
     </div>
 </div>
 <!--titolo-end-->
 
-<!-- !PAGE CONTENT! -->
+<!-- Start page content -->
 <div class="container text-center pad maintxt osw">
     <h1>
-        simao un ristorante gestito<br>
+        MangiAbi<br>
         quasi totalmente da persone con<br>
         <strong>disabilità intellettiva.</strong>
     </h1>
@@ -75,64 +73,85 @@
         tradizionali bolognesi
     </h1>
 </div>
-<div class="container text-center pad">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="image-container">
-                    <a href="menu.html">
-                        <img class="opzioni" src="img/assets/cucina.png" alt="">
-                        <div class="overlay">
-                            <h3 class="mont">il nostro menu</h3>
-                        </div>
-                    </a>
+<div class="container osw">
+    <div class="col-lg-8 offset-2 container rounded form text-center">
+        <form
+                method="post"
+                id="eventForm"
+                novalidate
+        >
+            <div class="row osw">
+                <div class="col-6">
+                    <div class="form-group">
+                        <h5>Nome</h5>
+                        <input
+                                class="form-control"
+                                name="first_name"
+                                id="first_name"
+                                type="text"
+                                placeholder="Mario"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <h5>Cognome</h5>
+                        <input
+                                class="form-control"
+                                name="last_name"
+                                id="last_name"
+                                type="text"
+                                placeholder="Rossi"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <h5>E-mail</h5>
+                        <input
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                type="email"
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Email'"
+                                placeholder="mariorossi@gmail.com"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <h5>Data di nascita</h5>
+                        <input
+                                class="form-control"
+                                name="birth_date"
+                                id="birth_date"
+                                type="date"
+                                onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Birth date'"
+                                placeholder="Birth date"
+                                required
+                        />
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h5 for="cvFile">Curriculum Vitae</h5>
+                    <input class="form-control" type="file" id="cvFile" required>
                 </div>
             </div>
-            <div class="col">
-                <div class="image-container">
-                    <a href="who.html">
-                        <img class="opzioni" src="img/assets/team.png" alt="">
-                        <div class="overlay">
-                            <h3 class="mont">scopri chi siamo</h3>
-                        </div>
-                    </a>
-                </div>
+            <div id="errorContainer" class="mb-3 text-danger"></div>
+            <div id="submit-btn" class="form-group">
+                <button type="submit" class="button button1 mont">
+                    INVIA
+                </button>
             </div>
-            <div class="col">
-                <div class="image-container">
-                    <a href="eventi.html">
-                        <img class="opzioni" src="img/assets/riot.png" alt="">
-                        <div class="overlay">
-                            <h3 class="mont">partecipa agli eventi</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-container">
-                    <a href="join.html">
-                        <img class="opzioni" src="img/assets/uniti.png" alt="">
-                        <div class="overlay">
-                            <h3 class="mont">fai la tua parte</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+            <span id="spinner" class="loader" style="display: none;"></span>
+        </form>
+        <div id="successContainer"></div>
     </div>
-</div>
-<div class="container text-center pad maintxt osw">
-    <h1>
-        simao aperti da<br>
-        <strong>Martedì</strong> a <strong>Domenica</strong><br>
-        12:00 - 15:00 e 19:00 - 22.00<br>
-        <strong>Sabato</strong> siamo aperti fino alle 23:00<br>
-        ___________________________________
-    </h1>
-    <h1 class="pad">
-        <span class="contact-info__icon"><i class="ti-pin"></i></span>
-        Ci trovi in <strong>Piazza Maggiore</strong> a Bologna
-    </h1>
 </div>
 <!-- End page content -->
 
