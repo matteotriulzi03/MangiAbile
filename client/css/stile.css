@@ -1,36 +1,105 @@
+body {
+background-image: url(../img/sfondo.png);
+background-size: cover;
+background-repeat: space;
+height: 100vh;
+margin: 0;
+}
+.mont {font-family: "Montserrat", regular;}
+.mont-bold {font-family: "Montserrat", bold;}
+.osw {font-family: "Oswald", regular;}
+.header {
+background-color: #ffffff;
+}
+.footer {
+padding: 20px;
+background-color: #cc5803;
+color: #ffffff;
+}
+.intro {
+padding: 20px;
+background-color: #cc5803;
+color: #fff;
+}
 
-        body {background-color: #fcfbe7;}
-        .mont {font-family: "Montserrat", regular;}
-        .mont-bold {font-family: "Montserrat", bold;}
-        .osw {font-family: "Oswald", regular;}
-        .header {
-            background-color: #ffffff;
-        }
-        .footer {
-            padding: 20px;
-            background-color: #cc5803;
-            color: #ffffff;
-        }
-        .social_icon a i {
-            margin: 10px;
-            font-size: 40px; /* dimensione icone */
-            color: white;
-        }
-        .contact-info__icon i {
-            color: white;
-        }
-        .col-foto {
-            background-color: #cc5803;
-            padding: 20px;
-        }
-        .col-menu {
-            padding: 20px;
-            background-color: #fff
-        }
-        .sotto-menu{
-            padding: 20px;
-            background-color: #fcfbe7
-        }
-        .titolo {
-            padding: 150px;
-        }
+
+.social_icon a i {
+margin: 10px;
+font-size: 40px; /* dimensione icone */
+color: white;
+}
+.contact-info__icon i {
+color: white;
+}
+
+
+.opzioni{
+color: #fff;
+height: 200px;
+overflow: hidden;
+}
+.col-foto {
+background-color: #cc5803;
+padding: 20px;
+}
+.col-menu {
+padding: 20px;
+background-color: #fff
+}
+.sotto-menu{
+padding: 20px;
+background-color: #fcfbe7
+}
+.form{
+background-color: #cc5803;
+}
+.titolo {
+padding: 100px;
+}
+
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffc971;
+}
+
+.button1:hover {
+  background-color: #ffc971;
+  color: white;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; /* Posiziona l'overlay nella parte superiore del contenitore */
+    left: 0; /* Posiziona l'overlay nella parte sinistra del contenitore */
+    width: 100%; /* Occupa l'intera larghezza del contenitore */
+    height: 100%; /* Occupa l'intera altezza del contenitore */
+    display: flex; /* Utilizza Flexbox per centrare il contenuto verticalmente e orizzontalmente */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Aggiunge un'opacità di sfondo all'overlay */
+}
+
+.overlay h3 {
+    color: white; /* Colore del testo */
+    text-align: center; /* Allinea il testo al centro */
+    margin: 0; /* Rimuove eventuali margini predefiniti */
+    padding: 10px; /* Aggiunge spazio interno al contenuto */
+}
