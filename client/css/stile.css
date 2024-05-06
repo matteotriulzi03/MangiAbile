@@ -8,6 +8,8 @@ margin: 0;
 .mont {font-family: "Montserrat", regular;}
 .mont-bold {font-family: "Montserrat", bold;}
 .osw {font-family: "Oswald", regular;}
+
+
 .header {
 background-color: #ffffff;
 }
@@ -21,6 +23,14 @@ padding: 20px;
 background-color: #cc5803;
 color: #fff;
 }
+.bordino{
+margin-bottom: 10px;
+margin-top: 10px
+border-bottom: 2px solid #fff;
+}
+.social{
+color: #ff9505;
+}
 
 
 .social_icon a i {
@@ -29,7 +39,7 @@ font-size: 40px; /* dimensione icone */
 color: white;
 }
 .contact-info__icon i {
-color: white;
+color: #white;
 }
 
 
@@ -54,7 +64,9 @@ background-color: #fcfbe7
 background-color: #cc5803;
 }
 .titolo {
-padding: 100px;
+margin: 0 auto;
+padding-top: 150px;
+padding-bottom: 50px;
 }
 
 
@@ -92,9 +104,9 @@ padding: 100px;
     width: 100%; /* Occupa l'intera larghezza del contenitore */
     height: 100%; /* Occupa l'intera altezza del contenitore */
     display: flex; /* Utilizza Flexbox per centrare il contenuto verticalmente e orizzontalmente */
-    justify-content: center; /* Centra il contenuto orizzontalmente */
-    align-items: center; /* Centra il contenuto verticalmente */
-    background-color: rgba(0, 0, 0, 0.5); /* Aggiunge un'opacità di sfondo all'overlay */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay h3 {
@@ -104,7 +116,28 @@ padding: 100px;
     padding: 10px; /* Aggiunge spazio interno al contenuto */
 }
 
+.overlay:hover {
+    position: absolute;
+    top: 0; /* Posiziona l'overlay nella parte superiore del contenitore */
+    left: 0; /* Posiziona l'overlay nella parte sinistra del contenitore */
+    width: 100%; /* Occupa l'intera larghezza del contenitore */
+    height: 100%; /* Occupa l'intera altezza del contenitore */
+    display: flex; /* Utilizza Flexbox per centrare il contenuto verticalmente e orizzontalmente */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 .pad{
-margin: 20px;
+margin: 0 auto;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.slogan{
+color: #ffb627;
+}
+
+.maintxt{
+color: #ff9505;
 }
