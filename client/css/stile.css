@@ -103,3 +103,8 @@ padding: 100px;
     margin: 0; /* Rimuove eventuali margini predefiniti */
     padding: 10px; /* Aggiunge spazio interno al contenuto */
 }
+
+
+.pad{
+margin: 20px;
+}
