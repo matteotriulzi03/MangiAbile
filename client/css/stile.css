@@ -106,33 +106,33 @@ padding-bottom: 50px;
 
 .overlay {
     position: absolute;
-    top: 0; /* Posiziona l'overlay nella parte superiore del contenitore */
-    left: 0; /* Posiziona l'overlay nella parte sinistra del contenitore */
-    width: 100%; /* Occupa l'intera larghezza del contenitore */
-    height: 100%; /* Occupa l'intera altezza del contenitore */
-    display: flex; /* Utilizza Flexbox per centrare il contenuto verticalmente e orizzontalmente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay h3 {
-    color: white; /* Colore del testo */
-    text-align: center; /* Allinea il testo al centro */
-    margin: 0; /* Rimuove eventuali margini predefiniti */
-    padding: 10px; /* Aggiunge spazio interno al contenuto */
+    color: #ffc971;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
 }
 
 .overlay:hover {
     position: absolute;
-    top: 0; /* Posiziona l'overlay nella parte superiore del contenitore */
-    left: 0; /* Posiziona l'overlay nella parte sinistra del contenitore */
-    width: 100%; /* Occupa l'intera larghezza del contenitore */
-    height: 100%; /* Occupa l'intera altezza del contenitore */
-    display: flex; /* Utilizza Flexbox per centrare il contenuto verticalmente e orizzontalmente */
-    justify-content: center; /* Centra il contenuto orizzontalmente */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .pad{
