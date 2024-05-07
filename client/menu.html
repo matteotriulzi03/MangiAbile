@@ -206,6 +206,86 @@
         </div>
     </div>
 </div>
+<div class="container pad maintxt osw">
+    <div class="row justify-content-center pad">
+        <div class="col-10 text-center footer smus">
+            <h2 onclick="espandiParagrafo('p1')">PRENOTA</h2>
+            <div class="paragrafo-espandibile text-left" id="p1">
+                <div class="container osw">
+                    <div class="col-lg-8 offset-2 container smus form text-center">
+                        <form
+                                method="post"
+                                id="eventForm"
+                                novalidate
+                        >
+                            <div class="row osw">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <h5>Nominativo</h5>
+                                        <input
+                                                class="form-control"
+                                                name="first_name"
+                                                id="first_name"
+                                                type="text"
+                                                placeholder="Mario"
+                                                required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <h5>Telefono</h5>
+                                        <input
+                                                class="form-control"
+                                                name="phone_number"
+                                                id="phone_number"
+                                                type="phone_number"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = '+39'"
+                                                placeholder="+39"
+                                                required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <h5>Data</h5>
+                                        <input
+                                                class="form-control"
+                                                name="birth_date"
+                                                id="birth_date"
+                                                type="date"
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Birth date'"
+                                                placeholder="Birth date"
+                                                required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <h5>Pranzo o Cena?</h5>
+                                        <select class="form-control" name="time_of_day" id="time_of_day" required>
+                                            <option value="">Seleziona</option>
+                                            <option value="giorno">Pranzo</option>
+                                            <option value="sera">Giorno</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="errorContainer" class="mb-3 text-danger"></div>
+                            <div id="submit-btn" class="form-group">
+                                <button type="submit" class="button button1 mont">Prenota</button>
+                            </div>
+                            <span id="spinner" class="loader" style="display: none;"></span>
+                        </form>
+                        <div id="successContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- End page content -->
 
 <!--cortina-->
@@ -279,6 +359,14 @@
 <script src="js/jquery.countdown.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
+<script src="js/main.js"></script>
+<script>
+    function espandiParagrafo(id) {
+      var paragrafo = document.getElementById(id);
+      paragrafo.classList.toggle("expanded");
+    }
+</script>
 
 </body>
 </html>
